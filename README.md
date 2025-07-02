@@ -54,6 +54,35 @@ export const handler = async (event) => {
   };
 };
 
+## 📦 Deployment Steps
+
+🔹 Frontend
+
+1. Build React app:
+npm run build
+2. Upload contents of build/ folder to your S3 bucket (e.g., sahilok12345)
+
+3. Enable static website hosting
 
 🔹 Backend
+
 1. Zip the index.mjs file:
+zip function.zip index.mjs
+2. Upload to AWS Lambda
+
+3. Create an API Gateway → Route /helloLambda → Integrate with Lambda
+
+4. Add Lambda permissions to allow API Gateway access
+
+## 🧠 Learnings
+
+Serverless deployment using Lambda and S3
+
+CORS handling between frontend and backend
+
+Minimal fullstack project using AWS services only
+
+## 📌 Author
+
+Sahil Shakya
+GitHub | LinkedIn
